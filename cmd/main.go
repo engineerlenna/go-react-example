@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-react-example/src"
+	go_react_example "go-react-example"
 	"log"
 	"net/http"
 	"os"
@@ -24,7 +24,7 @@ func main() {
 			"time": time.Now().Format(time.RFC1123),
 		})
 	})
-	distFS := src.GetSubFS()
+	distFS := go_react_example.GetSubFS()
 	fileServer := http.FileServer(http.FS(distFS))
 	router.NoRoute(func(c *gin.Context) {
 		if strings.HasPrefix(c.Request.URL.Path, "/api/") {

@@ -1,4 +1,4 @@
-package src
+package go_react_example
 
 import (
 	"embed"
