@@ -1,7 +1,7 @@
 # Go-related variables
 BINARY_NAME=go-react-example
 
-FRONTEND_DIR=./src/web
+FRONTEND_DIR=./web
 BACKEND_DIR=./cmd/main.go
 .PHONY: all install dev build run clean
 
